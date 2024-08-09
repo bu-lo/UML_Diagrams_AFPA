@@ -1,0 +1,236 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLNote</id><coordinates><x>8</x><y>80</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=blue
+Ex 1</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>64</x><y>136</y><w>168</w><h>80</h></coordinates><panel_attributes>Directory
+
+-
+- name: String
+-
++ methodFolder(): void
++ addFile(file: File): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>144</x><y>208</y><w>40</w><h>104</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 0..*
+ 
+</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>64</x><y>296</y><w>168</w><h>64</h></coordinates><panel_attributes>File
+
+-
+- name: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>272</x><y>88</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=green
+Ex 2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>352</x><y>136</y><w>168</w><h>64</h></coordinates><panel_attributes>Email
+
+-
+- object: String
+- content: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>512</x><y>152</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*
+Adressé à &gt;</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>632</x><y>136</y><w>168</w><h>72</h></coordinates><panel_attributes>Recipient
+
+-
+- firstName: String
+- lastName: String
+- address: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>192</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 0..*
+  
+</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>352</x><y>296</y><w>168</w><h>64</h></coordinates><panel_attributes>Attachment
+
+-
+- name: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>176</x><y>0</y><w>112</w><h>56</h></coordinates><panel_attributes>Note..
+bg=blue
+- constructors
+- getters / setters
+- toString(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>0</x><y>392</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=yellow
+Ex 3</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>56</x><y>440</y><w>168</w><h>64</h></coordinates><panel_attributes>Country
+
+-
+- name: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>136</x><y>496</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 0..*
+
+</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>56</x><y>600</y><w>168</w><h>64</h></coordinates><panel_attributes>City
+
+-
+- name: String
+- capital: boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>552</y><w>104</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-
+
+twin 
+m1=1
+m2=1</panel_attributes><additional_attributes>20;80;80;80;80;10;10;10;10;60</additional_attributes></element><element><id>UMLNote</id><coordinates><x>320</x><y>384</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=yellow
+Ex 3 bis</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>376</x><y>432</y><w>168</w><h>64</h></coordinates><panel_attributes>Country
+
+-
+- name: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>488</y><w>40</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 0..*
+
+</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>376</x><y>592</y><w>168</w><h>64</h></coordinates><panel_attributes>City
+
+-
+- name: String
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>544</y><w>104</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-
+
+twin 
+m1=1
+m2=1</panel_attributes><additional_attributes>20;80;80;80;80;10;10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>488</y><w>64</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..1
+capital ^</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>656</x><y>360</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=red
+Ex 4</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>744</x><y>400</y><w>168</w><h>136</h></coordinates><panel_attributes>UndergroundLine
+
+-
+- number: int
+
+--
+
++ constructor
++ getters
++ setters
++ addStation(station : Station) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>824</x><y>528</y><w>40</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= 0..*
+m2= 2..*
+</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>744</x><y>624</y><w>168</w><h>64</h></coordinates><panel_attributes>Station
+
+-
+- stopName: String
+- stationAvailable: boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>952</x><y>552</y><w>168</w><h>64</h></coordinates><panel_attributes>StationNumber
+
+-
+- number: int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>824</x><y>568</y><w>144</w><h>32</h></coordinates><panel_attributes>lt=.
+</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>952</x><y>456</y><w>112</w><h>64</h></coordinates><panel_attributes>Note..
+bg=blue
+
+1 station can be 
+only 1 time on a line</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>24</x><y>704</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=pink
+Ex 5</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>112</x><y>776</y><w>168</w><h>80</h></coordinates><panel_attributes>Menu
+
+-
+- name: String
+
+--
++ addPizza (pizza:Pizza) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>192</x><y>848</y><w>40</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 0..1
+m2= 0..*
+  
+</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>112</x><y>928</y><w>168</w><h>64</h></coordinates><panel_attributes>Pizza
+
+-
+- name: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>928</y><w>168</w><h>80</h></coordinates><panel_attributes>Order
+
+-
+- name: String
+
+--
++ addPizza (pizza:Pizza) : String
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>272</x><y>944</y><w>104</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 0..*
+  
+</panel_attributes><additional_attributes>110;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1208</x><y>400</y><w>168</w><h>136</h></coordinates><panel_attributes>UndergroundLine
+
+-
+- number: int
+
+--
+
++ constructor
++ getters
++ setters
++ addStation(station : Station) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1288</x><y>528</y><w>40</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= 0..*
+m2= 2..*
+</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1208</x><y>624</y><w>168</w><h>96</h></coordinates><panel_attributes>Station
+
+-
+- number: int
+
+-
+- stopName: String
+- stationAvailable: boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1144</x><y>360</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=red
+Ex 4 bis</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>648</x><y>808</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=blue
+Ex 6</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>736</x><y>1000</y><w>168</w><h>72</h></coordinates><panel_attributes>Intern
+
+-
+- lastName: String
+- firstName: String
+- age: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>736</x><y>848</y><w>168</w><h>64</h></coordinates><panel_attributes>Formation
+
+-
+- name: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>896</x><y>848</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1..*
+m2= 1..*
+  teach in
+</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1128</x><y>808</y><w>192</w><h>104</h></coordinates><panel_attributes>lt=-
+m1=0..*
+
+
+
+                                  superior of &gt;
+
+m2=0..*</panel_attributes><additional_attributes>70;100;140;100;140;20;10;20;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1016</x><y>848</y><w>168</w><h>64</h></coordinates><panel_attributes>Teacher
+
+-
+- name: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>896</x><y>880</y><w>136</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+&lt; referent of </panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>808</x><y>904</y><w>40</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1= 1
+m2= 1..*
+ 
+</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLNote</id><coordinates><x>40</x><y>1112</y><w>48</w><h>32</h></coordinates><panel_attributes>Note..
+bg=green
+Ex 7</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>272</x><y>1160</y><w>168</w><h>64</h></coordinates><panel_attributes>Drawing
+
+-
+- description: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>72</x><y>1296</y><w>168</w><h>64</h></coordinates><panel_attributes>Point
+
+-
+- features: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>272</x><y>1296</y><w>168</w><h>64</h></coordinates><panel_attributes>Cercle
+
+-
+- features: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>472</x><y>1296</y><w>168</w><h>64</h></coordinates><panel_attributes>Line
+
+-
+- features: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>344</x><y>1216</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>152</x><y>1200</y><w>136</w><h>112</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;10;10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>432</x><y>1200</y><w>136</w><h>112</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;150;10;150;120</additional_attributes></element><element><id>Relation</id><coordinates><x>416</x><y>1120</y><w>144</w><h>88</h></coordinates><panel_attributes>lt=-
+m2=0..*
+m1=1..*
+
+
+composed of &gt;</panel_attributes><additional_attributes>30;80;70;80;70;20;10;20;10;50</additional_attributes></element><element><id>UMLNote</id><coordinates><x>680</x><y>1128</y><w>80</w><h>48</h></coordinates><panel_attributes>Note..
+bg=yellow
+Ex 8 
+(not corrected)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>776</x><y>1176</y><w>168</w><h>72</h></coordinates><panel_attributes>Freelance
+
+-
+- lastName: String
+- firstName: String
+- siretNumber: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>936</x><y>1176</y><w>152</w><h>40</h></coordinates><panel_attributes>lt=-
+m1= 1
+m2= 0..n
+work for &gt;</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>Relation</id><coordinates><x>936</x><y>1208</y><w>152</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+&lt; hire</panel_attributes><additional_attributes>10;20;170;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>928</x><y>1288</y><w>168</w><h>72</h></coordinates><panel_attributes>Message
+
+-
+- beginningDate: LocalDate
+- endingDate: LocalDate
+- salary: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1000</x><y>1216</y><w>24</w><h>88</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1072</x><y>1176</y><w>168</w><h>72</h></coordinates><panel_attributes>Company
+
+-
+- name: String
+- siretNumber: int
+- employeeNumber: int</panel_attributes><additional_attributes></additional_attributes></element></diagram>
